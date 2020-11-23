@@ -3,40 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Kumar </title>
+    <title>Home | Rahul</title>
+    <!-- <link href="Styles/styles.css" rel="stylesheet" /> -->
+    <link rel="stylesheet"  href="main.css"/>
 </head>
 <body>
-    <h1> Welcome, Hope You Are Doing Well. </h1>
-    <p>
-        Rahul Kumar is finishing his 4th year at Lakshmi Narain College Of Technlogy & Science, Bhopal.<br>
-        where he is interested in Computer Science Engineering. Although he has yet to declare a major,<br>
-        he’s considering Full Stack Web Development.<br>
-    </p>
+    <nav class="navigation container">
+        <div class="nav-brand">Rahul Kumar</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="about.html">about</a>
+            </li>
+        </ul>
+    </nav>
 
-    <h3> About me ! </h3> 
+    <header class="hero">
+        <img class="hero-img" src="images/hero.svg" />
+        <h1 class="hero-heading">Rahul the <span class="heading-inverted"> web developer</span></h1>
+    </header>
 
-    <p>Hi! This is Rahul Kumar. Meaning of my name is a very responsible, trustworthy person.<br>
-        I belong to Narkatiaganj, Bihar. My city falls in West champaran district which is famous for the <br>
-        Champaran Satyagraha movement led by Mahatma Gandhi in 1915. <br>
-        I am final year BE student from LNCT Bhopal. <br>
-        If I talk about my skill I am currently learning web Development. <br>
-    </p>
-    <h3> Skills </h3>
-    <p>
-        1. Android <br>
-        2. Java <br>
-        3. Firebase <br>
-        4. Python <br>
-        5. Data Structure <br>
-        6. Object Oriented Programming <br>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>@Skills</h1>
+            
+            <ul class="list-non-bullet">
+                <li class="list-item-inline">Android</li>
+                <li class="list-item-inline">Java</li>
+                <li class="list-item-inline">Firebase</li>               
+                <li class="list-item-inline">Data Structure</li>
+                <li class="list-item-inline">JSON</li>
+                <li class="list-item-inline">XML</li> 
+                
 
-    </p>
-       
+            </ul>
+        </div>
+        <div class="container container-center">
+            
+            <ul class="list-non-bullet">               
+                <li class="list-item-inline">HTML5</li>
+                <li class="list-item-inline">CSS3</li>
+                <li class="list-item-inline">Python</li>
+                
 
-       <h3> Hobbies </h3> 
-        1. Coding <br>
-        2. Writing <br>
-        3. Reading books <br>
-    
+            </ul>
+        </div>
+    </section>
+   
+    <section class="section">
+        <div class="container container-center">
+            <h1>@Projects</h1>
+            <p>I like to showcase my work and thus, you can see my projects hosted online</p>
+            <a class="primary-link" href="projects.html">Browse Projects</a>
+        </div>
+
+    </section>
 </body>
 </html>
