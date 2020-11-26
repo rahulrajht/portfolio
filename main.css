@@ -36,7 +36,7 @@ hr {
     }
 
 .link-primary {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: white;
@@ -47,12 +47,12 @@ hr {
 }
 
 .link-secondary {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0rem;
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
     height: 2rem;
-    width: auto;
+    max-width: 55px;
 }
 
 /** look into BEM naming convention for CSS **/
