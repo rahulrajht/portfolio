@@ -192,11 +192,22 @@ hr {
     width: 30px;
     height: 30px;
   }
-  .para{
+@media only screen and (max-width: 1200px) {
+.para{ 
     font-family: 'Roboto Mono', monospace;
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
+    
   }
+}
+@media only screen and (min-width: 992px) {
+    .para{ 
+        font-family: 'Roboto Mono', monospace;
+        max-width: 800px;
+        margin: auto;
+       
+      }
+    }
 .space{
     margin-bottom: 1rem;
 }
