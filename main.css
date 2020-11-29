@@ -2,14 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
 :root {
     --primary-color: #F9AA33;
-    --off-white: #F3F4F6;
+    --off-white: #d7e4e3;
     --dark-gray: #6B7280;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    max-width: 900px;
-    margin: auto;
+    /* max-width: 900px;
+    margin: auto; */
+    padding: 0;
+    margin: 0;
 }
 
 hr {
@@ -18,7 +20,7 @@ hr {
 
 /** container **/
 .container {
-    padding: 0rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .container-center {
@@ -28,8 +30,10 @@ hr {
 
 /** links **/
 .link {
+    box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
     
     }
 
@@ -39,7 +43,8 @@ hr {
     border-radius: 0.5rem;
     color: white;
     height: 2rem;
-   
+    text-decoration: none;
+       
     
 }
 
@@ -49,6 +54,7 @@ hr {
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
     height: 2rem;
+    text-decoration: none;
 }
 
 /** look into BEM naming convention for CSS **/
@@ -98,9 +104,10 @@ hr {
 }
 
 .hero .hero-img {
-    max-width: 350px;
+    max-width: 300px;
     display: block;
     margin: auto;
+
 }
 
 .hero .hero-heading {
@@ -116,18 +123,16 @@ hr {
 /** sections **/
 
 .section {
-    
-    padding: 5px;
+    padding: 1rem;
 }
 
 .section h1 {
+    margin-top: 0;
     text-align: center;
 
 }
 
 .ow {
-    max-width: 800px;
-    margin: auto;
     background-color: var(--off-white);
 }
 
@@ -138,11 +143,14 @@ hr {
     background-color: var(--primary-color);
     text-align: center;
     border-top-right-radius: 1rem;
-    width: 100%;
-    bottom: 0;
-    max-width: 900px;
-    margin: auto;
-    position: fixed;
+    width: auto;
+    margin-top: 50px;
+    padding: 0.5rem 1rem;
+}
+.footer .footer-header{
+    color:black;
+    font-size: large;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .footer .link {
@@ -154,30 +162,21 @@ hr {
 }
 
 .projects{
-    max-width: 800px;
+    max-width: 900px;
+    width: 100%;
     margin: auto;
 }
+
 .off-white{
-    margin-top: 0.5rem;
+    padding: 1rem 1rem;
     background-color: var(--off-white);
 }
-
-.nav-dp{
-        width: 500px;
-        height: 80px;
-        background-color: blue;
-        margin-top: 50px;
-      
-}
-
   .con {
     margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-
-   
+    overflow: hidden;   
   }
   
   .con img {
@@ -190,22 +189,51 @@ hr {
     width: 30px;
     height: 30px;
   }
-@media only screen and (max-width: 1200px) {
+
+
 .para{ 
-    font-family: 'Roboto Mono', monospace;
-    max-width: 600px;
-    margin: auto;
-    
-  }
-}
-@media only screen and (min-width: 992px) {
-    .para{ 
+        padding: 0 1rem;
         font-family: 'Roboto Mono', monospace;
         max-width: 800px;
         margin: auto;
        
-      }
-    }
+}
+.para-skills{
+    font-family: 'Roboto Mono', monospace;
+    margin: auto;
+}
+#para-skills{
+    font-family: 'Roboto Mono', monospace;
+    padding: 1rem 1rem;
+}
 .space{
     margin-bottom: 1rem;
 }
+@media (max-width: 500px) {
+
+    .navigation .nav-brand {
+        text-align: center;
+    }
+
+    .list-item-inline{
+        padding: 0;
+    }
+
+    .navigation .nav-pills{
+        text-align: center;
+    }
+
+    nav .link{
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    .hero .hero-img{
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+ 
+  }
