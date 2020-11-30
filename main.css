@@ -12,6 +12,7 @@ body {
     margin: auto; */
     padding: 0;
     margin: 0;
+
 }
 
 hr {
@@ -67,7 +68,6 @@ hr {
 
 .list-item-inline {
     display: inline;
-    padding: 0rem 0.5rem;
 }
 
 /** navigation **/
@@ -133,6 +133,9 @@ hr {
 }
 
 .ow {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 2rem;
     background-color: var(--off-white);
 }
 
@@ -165,9 +168,14 @@ hr {
     max-width: 900px;
     width: 100%;
     margin: auto;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .off-white{
+    max-width: 900px;
+    margin: auto;
+    border-radius: 2rem;
     padding: 1rem 1rem;
     background-color: var(--off-white);
 }
@@ -214,9 +222,9 @@ hr {
     .navigation .nav-brand {
         text-align: center;
     }
-
-    .list-item-inline{
-        padding: 0;
+    .link{
+        margin: auto;
+        padding: 5px 5px;
     }
 
     .navigation .nav-pills{
@@ -235,5 +243,9 @@ hr {
     .section {
         padding: 1rem;
     }
- 
+    .ol{
+        max-width: fit-content;
+        padding: 0rem 1rem; 
+        margin: auto;
+    }
   }
