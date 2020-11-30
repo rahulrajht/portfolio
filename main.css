@@ -136,6 +136,7 @@ hr {
     max-width: 900px;
     margin: auto;
     border-radius: 2rem;
+    text-align: center;
     background-color: var(--off-white);
 }
 
@@ -146,7 +147,7 @@ hr {
     background-color: var(--primary-color);
     text-align: center;
     border-top-right-radius: 1rem;
-    width: fit-content;
+    width: auto;
     margin-top: 50px;
     padding: 0.5rem 1rem;
 }
@@ -247,5 +248,14 @@ hr {
         max-width: fit-content;
         padding: 0rem 1rem; 
         margin: auto;
+    }
+    .footer {
+    
+        background-color: var(--primary-color);
+        text-align: center;
+        border-top-right-radius: 1rem;
+        min-width: auto;
+        margin-top: 50px;
+        padding: 0.5rem;
     }
   }
