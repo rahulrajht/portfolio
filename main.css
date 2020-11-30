@@ -210,6 +210,7 @@ hr {
 .para-skills{
     font-family: 'Roboto Mono', monospace;
     margin: auto;
+    max-width: fit-content;
 }
 #para-skills{
     font-family: 'Roboto Mono', monospace;
@@ -254,7 +255,7 @@ hr {
         background-color: var(--primary-color);
         text-align: center;
         border-top-right-radius: 1rem;
-        min-width: auto;
+        min-width: fit-content;
         margin-top: 50px;
         padding: 0.5rem;
     }
